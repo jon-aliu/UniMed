@@ -1,0 +1,918 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+/* variables */
+html, body, .wrapper {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) and (min-width:427px){
+  .nav{
+    overflow-x: hidden;
+  }
+  .button {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 30px;
+    color: rgb(2, 136, 209);
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    align-content: space-around;
+    justify-content: center;
+    /* margin-top: 20px; */
+  }
+  .button span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  .button .border {
+    border: 1px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .button .top, .button .left, .button .right,.button .bottom {
+    background-color: rgb(2, 136, 209);
+    height: 1px;
+    width: 0;
+  }
+  
+  .button .left, .button .right {
+    height: 0;
+    width: 1px;
+  }
+  .button .top {
+    top: -5px;
+    left: -15px;
+  }
+  .button .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  .button .left {
+    top: -15px;
+    right: -5px;
+  }
+  .button .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  .button:hover, .button:active{
+      color: rgb(2, 136, 209);
+      width: 70px;
+      height: 30px;
+      /* margin-top: 5px; */
+    }
+  
+  
+  .button:hover .border,.button:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+  
+  }
+  .button:hover .top, .button:hover .bottom, .button:active .top, .button:active .bottom   {
+    width: 70px;
+  }
+  .button:hover .left, .button:hover .right, .button:active .left, .button:active .right{
+    height: 40px;
+  }
+  .button:hover .top, .button:active .top {
+    left: -5px;
+  }
+  .button:hover .bottom, .button:active .bottom {
+    right: -5px;
+  }
+  .button:hover .left, .button:active .left{
+    top: -5px;
+  }
+  .button:hover .right, .button:active .right {
+    bottom: -5px;
+  }
+  .button .text {
+    position: relative;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+  }
+  .button:hover .text, .button:active .text{
+    color:white;
+  }
+  
+  #contactus-nav{
+    display: flex;
+    width: 90px;
+    margin-top: 0px;
+    height: 30px;
+  }
+  #contactus-nav:hover, #contactus-nav:active{
+    margin-top: 0px;
+    height: 30px;
+  }
+  
+  #contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom, #contactus-nav.button:active .top, #contactus-nav.button:active .bottom{
+    width: 100px;
+  }
+  #contactus-nav.button:hover .right, #contactus-nav.button:hover .left{
+    height: 40px;
+  } 
+  
+  /* #Login-nav:hover, #Login-nav:active, #Signup-nav:active, #Signup-nav:hover{
+    height: 30px;
+  }
+  #Login-nav:hover .top, #Login-nav:active .top, #Signup-nav:active .top, #Signup-nav:hover .top{
+    width: 80px;
+  }
+  #Login-nav:hover .bottom, #Login-nav:active .bottom, #Signup-nav:active .bottom, #Signup-nav:hover .bottom{
+    width: 80px;
+  } */
+  #aboutus-nav{
+    display: flex;
+    width: 80px;
+    height: 30px;
+  }
+
+  #aboutus-nav.button:hover .top, #aboutus-nav.button:hover .bottom, #aboutus-nav.button:active .top, #aboutus-nav.button:active .bottom{
+    width: 89px;
+  }
+  .addCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 20px;
+  }
+  .addCard .border{
+    height: 60px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .addCard .border{
+    background-color: transparent;
+    border: 0px transparent;
+    transition: 0.3s;
+  }
+  
+  .addCard:active, .addCard:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(2, 136, 209);
+    color: white;
+    width: 90px;
+    transition: 0.3s;
+  }  
+  .addCard:hover .border,.addCard:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+    border: 0px solid rgb(2, 136, 209);
+    height: 60px;
+    width: 100px;
+    transition: 0.2s;
+  }
+  .addCard.button:hover .top, .addCard.button:hover .bottom, .addCard.button:active .top, .addCard.button:active .bottom{
+    width: 100px;
+  }
+  .addCard.button:hover .right, .addCard.button:hover .left, .addCard.button:active .right, .addCard.button:active .left{
+    height: 60px;
+  } 
+  
+}
+
+
+@media only screen and (min-width: 600px) {
+  .nav{
+    overflow-x: hidden;
+  }
+  .button {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 30px;
+    color: rgb(2, 136, 209);
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    align-content: space-around;
+    justify-content: center;
+    
+    /* margin-top: 20px; */
+  }
+  .button span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  .button .border {
+    border: 1px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .button .top, .button .left, .button .right,.button .bottom {
+    background-color: rgb(2, 136, 209);
+    height: 1px;
+    width: 0;
+  }
+  
+  .button .left, .button .right {
+    height: 0;
+    width: 1px;
+  }
+  .button .top {
+    top: -5px;
+    left: -15px;
+  }
+  .button .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  .button .left {
+    top: -15px;
+    right: -5px;
+  }
+  .button .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  .button:hover, .button:active{
+      color: rgb(2, 136, 209);
+      width: 70px;
+      height: 30px;
+      /* margin-top: 5px; */
+    }
+  
+  
+  .button:hover .border,.button:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+  
+  }
+  .button:hover .top, .button:hover .bottom, .button:active .top, .button:active .bottom   {
+    width: 70px;
+  }
+  .button:hover .left, .button:hover .right, .button:active .left, .button:active .right{
+    height: 40px;
+  }
+  .button:hover .top, .button:active .top {
+    left: -5px;
+  }
+  .button:hover .bottom, .button:active .bottom {
+    right: -5px;
+  }
+  .button:hover .left, .button:active .left{
+    top: -5px;
+  }
+  .button:hover .right, .button:active .right {
+    bottom: -5px;
+  }
+  .button .text {
+    position: relative;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+  }
+  .button:hover .text, .button:active .text{
+    color:white;
+  }
+  
+  #contactus-nav{
+    display: flex;
+    width: 90px;
+    margin-top: 0px;
+    height: 30px;
+  }
+  #contactus-nav:hover, #contactus-nav:active{
+    margin-top: 0px;
+    height: 30px;
+  }
+  
+  #contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom, #contactus-nav.button:active .top, #contactus-nav.button:active .bottom{
+    width: 100px;
+  }
+  #contactus-nav.button:hover .right, #contactus-nav.button:hover .left{
+    height: 40px;
+  } 
+  
+  /* #Login-nav:hover, #Login-nav:active, #Signup-nav:active, #Signup-nav:hover{
+    height: 30px;
+  }
+  #Login-nav:hover .top, #Login-nav:active .top, #Signup-nav:active .top, #Signup-nav:hover .top{
+    width: 80px;
+  }
+  #Login-nav:hover .bottom, #Login-nav:active .bottom, #Signup-nav:active .bottom, #Signup-nav:hover .bottom{
+    width: 80px;
+  } */
+  #aboutus-nav{
+    display: flex;
+    width: 80px;
+    height: 30px;
+  }
+
+  #aboutus-nav.button:hover .top, #aboutus-nav.button:hover .bottom, #aboutus-nav.button:active .top, #aboutus-nav.button:active .bottom{
+    width: 89px;
+  }
+  .addCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 20px;
+  }
+  .addCard .border{
+    height: 60px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .addCard .border{
+    background-color: transparent;
+    border: 0px transparent;
+    transition: 0.3s;
+  }
+  
+  .addCard:active, .addCard:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(2, 136, 209);
+    color: white;
+    width: 90px;
+    transition: 0.3s;
+  }  
+  .addCard:hover .border,.addCard:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+    border: 0px solid rgb(2, 136, 209);
+    height: 60px;
+    width: 100px;
+    transition: 0.2s;
+  }
+  .addCard.button:hover .top, .addCard.button:hover .bottom, .addCard.button:active .top, .addCard.button:active .bottom{
+    width: 100px;
+  }
+  .addCard.button:hover .right, .addCard.button:hover .left, .addCard.button:active .right, .addCard.button:active .left{
+    height: 60px;
+  } 
+  
+
+  /* #Login-nav, #Signup-nav{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 40px;
+    color: rgb(2, 136, 209);
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  #Signup-nav{
+    margin-right: 20px;
+  } */
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .nav{
+    overflow-x: hidden;
+  }
+  .button {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 40px;
+    color: rgb(2, 136, 209);
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    align-content: space-around;
+    /* margin-top: 20px; */
+  }
+  .button span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  .button .border {
+    border: 1px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .button .top, .button .left, .button .right,.button .bottom {
+    background-color: rgb(2, 136, 209);
+    height: 1px;
+    width: 0;
+  }
+  
+  .button .left, .button .right {
+    height: 0;
+    width: 1px;
+  }
+  .button .top {
+    top: -5px;
+    left: -15px;
+  }
+  .button .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  .button .left {
+    top: -15px;
+    right: -5px;
+  }
+  .button .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  .button:hover, .button:active{
+      color: rgb(2, 136, 209);
+      width: 70px;
+      height: 40px;
+      margin-top: 5px;
+    }
+  
+  
+  .button:hover .border,.button:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+  
+  }
+  .button:hover .top, .button:hover .bottom, .button:active .top, .button:active .bottom   {
+    width: 70px;
+  }
+  .button:hover .left, .button:hover .right, .button:active .left, .button:active .right{
+    height: 40px;
+  }
+  .button:hover .top, .button:active .top {
+    left: -5px;
+  }
+  .button:hover .bottom, .button:active .bottom {
+    right: -5px;
+  }
+  .button:hover .left, .button:active .left{
+    top: -5px;
+  }
+  .button:hover .right, .button:active .right {
+    bottom: -5px;
+  }
+  .button .text {
+    position: relative;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+  }
+  .button:hover .text{
+    color:white;
+  }
+  
+  #contactus-nav{
+    display: flex;
+    width: 100px;
+    margin-top: 5px;
+  }
+  #contactus-nav:hover, #contactus-nav:active{
+    width: 100px;
+    margin-top: 5px;
+  }
+  
+  #contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom, #contactus-nav.button:active .top, #contactus-nav.button:active .bottom{
+    width: 110px;
+  }
+  #contactus-nav.button:hover .right, #contactus-nav.button:hover .left{
+    height: 40px;
+  } 
+  
+  #Login-nav:hover, #Login-nav:active, #Signup-nav:active, #Signup-nav:hover{
+    height: 30px;
+  }
+  #Login-nav:hover .top, #Login-nav:active .top, #Signup-nav:active .top, #Signup-nav:hover .top{
+    width: 100px;
+  }
+  #Login-nav:hover .bottom, #Login-nav:active .bottom, #Signup-nav:active .bottom, #Signup-nav:hover .bottom{
+    width: 100px;
+  }
+  #aboutus-nav, #home-nav{
+    display:flex ;
+    width: 80px;
+  }
+   #home-nav:active{
+    display:flex ;
+    width: 80px;
+    height: 30px;
+  }
+  #aboutus-nav:active{
+    display:flex ;
+    width: 90px;
+    height: 30px;
+  }
+
+  #aboutus-nav.button:hover .top, #aboutus-nav.button:hover .bottom, #aboutus-nav.button:active .top, #aboutus-nav.button:active .bottom{
+    width: 99px;
+  }
+  
+  #home-nav.button:hover .top, #home-nav.button:hover .bottom, #home-nav.button:active .top, #home-nav.button:active .bottom{
+    width: 90px;
+  }
+ 
+
+  #Home-nav, #Login-nav, #Signup-nav, #aboutus-nav{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 40px;
+    color: rgb(2, 136, 209);
+    font-size: 13px;
+    /* line-height: 200%; */
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  #Signup-nav{
+    margin-right: 20px;
+  }
+  .addCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 20px;
+  }
+  .addCard .border{
+    height: 60px;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  .addCard .border{
+    background-color: transparent;
+    border: 0px transparent;
+    transition: 0.3s;
+  }
+  
+  .addCard:active, .addCard:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: rgb(2, 136, 209);
+    color: white;
+    width: 90px;
+    transition: 0.3s;
+  }  
+  .addCard:hover .border,.addCard:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+    border: 0px solid rgb(2, 136, 209);
+    height: 60px;
+    width: 100px;
+    transition: 0.2s;
+  }
+  .addCard.button:hover .top, .addCard.button:hover .bottom, .addCard.button:active .top, .addCard.button:active .bottom{
+    width: 100px;
+  }
+  .addCard.button:hover .right, .addCard.button:hover .left, .addCard.button:active .right, .addCard.button:active .left{
+    height: 60px;
+  } 
+  
+} 
+
+
+@media only screen and (min-width: 1200px) {
+
+  .button {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 30px;
+    color: rgb(2, 136, 209);
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    align-content: space-around;
+  
+  }
+  .button span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  .button .border {
+    border: 1px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .button .top, .button .left, .button .right,.button .bottom {
+    background-color: rgb(2, 136, 209);
+    height: 1px;
+    width: 0;
+  }
+  
+  .button .left, .button .right {
+    height: 0;
+    width: 1px;
+  }
+  .button .top {
+    top: -5px;
+    left: -15px;
+  }
+  .button .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  .button .left {
+    top: -15px;
+    right: -5px;
+  }
+  .button .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  .button:hover, .button:active{
+      color: rgb(2, 136, 209);
+      height: 30px;
+    margin-top: 0px;
+
+      }
+  
+  
+  .button:hover .border,.button:active .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: rgb(2, 136, 209);
+  
+  }
+  .button:hover .top, .button:hover .bottom, .button:active .top, .button:active .bottom   {
+    width: 100px;
+  }
+  .button:hover .left, .button:hover .right, .button:active .left, .button:active .right{
+    height: 40px;
+  }
+  .button:hover .top, .button:active .top {
+    left: -5px;
+  }
+  .button:hover .bottom, .button:active .bottom {
+    right: -5px;
+  }
+  .button:hover .left, .button:active .left{
+    top: -5px;
+  }
+  .button:hover .right, .button:active .right {
+    bottom: -5px;
+  }
+  .button .text {
+    position: relative;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+  }
+  .button:hover .text{
+    color:white;
+  }
+  
+  #contactus-nav{
+    display: flex;
+    width: 120px;
+    margin-top: 0px;
+    height: 30px;
+    font-size: 13px;
+  }
+  #contactus-nav:hover, #contactus-nav:active{
+    width: 120px;
+    margin-top: 0px;
+    height: 30px;
+  }
+  
+  #contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom, #contactus-nav.button:active .top, #contactus-nav.button:active .bottom{
+    width: 130px;
+  }
+  #contactus-nav.button:hover .right, #contactus-nav.button:hover .left{
+    height: 40px;
+  } 
+
+  
+  #Login-nav:hover, #Login-nav:active{
+    width: 80px;
+    height: 30px;
+    margin-top: 0px;
+  }
+  #Login-nav:hover .top, #Login-nav:active .top{
+    width: 90px;
+  }
+  #Login-nav:hover .bottom, #Login-nav:active .bottom{
+    width: 90px;
+  }
+  #Signup-nav:active .bottom, #Signup-nav:hover .bottom, #Signup-nav:active .top, #Signup-nav:hover .top{
+    width: 90px;
+  }
+  #Signup-nav:hover, #Signup-nav:active{
+    width: 80px;
+    height: 30px;
+    margin-top: 0px;
+    
+  }
+
+  #aboutus-nav{
+    display: flex;
+    width: 100px;
+    height: 30px;
+  }
+  #aboutus-nav:hover, #aboutus-nav:active{
+    display: flex;
+    width: 100px;
+    height: 30px;
+  }
+
+  #aboutus-nav.button:hover .top, #aboutus-nav.button:hover .bottom, #aboutus-nav.button:active .top, #aboutus-nav.button:active .bottom{
+    width: 110px;
+  }
+ 
+
+  #Login-nav{
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 30px;
+    color: rgb(2, 136, 209);
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+  }
+#Signup-nav{
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 30px;
+  color: rgb(2, 136, 209);
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  z-index: 0;
+  box-sizing: border-box;
+  margin-left: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  
+}
+.addCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(2, 136, 209);
+  margin-right: 10px;
+  width: 90px;
+  font-size: 20px;
+}
+.addCard .border{
+  height: 60px;
+  width: 100px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.addCard .border{
+  background-color: transparent;
+  border: 0px transparent;
+  transition: 0.3s;
+}
+
+.addCard:active, .addCard:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: rgb(2, 136, 209);
+  color: white;
+  width: 90px;
+  transition: 0.3s;
+}  
+.addCard:hover .border,.addCard:active .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: rgb(2, 136, 209);
+  border: 0px solid rgb(2, 136, 209);
+  height: 60px;
+  width: 100px;
+  transition: 0.2s;
+}
+.addCard.button:hover .top, .addCard.button:hover .bottom, .addCard.button:active .top, .addCard.button:active .bottom{
+  width: 100px;
+}
+.addCard.button:hover .right, .addCard.button:hover .left, .addCard.button:active .right, .addCard.button:active .left{
+  height: 60px;
+} 
+
+
+  }
+  
+  
+  

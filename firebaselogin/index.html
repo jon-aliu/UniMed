@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Unimed | Homepage</title>
+    <!-- font from google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- connection with css -->
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/index.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/nav.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/homepage.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/login.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/Signup.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/css.responsive/querty-nav.css">
+    <!-- <link rel="stylesheet" href="/UniMed/firebaselogin/css/css.responsive/querty-homepage.css"> -->
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/css.responsive/querty-login.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/css.responsive/querty-signup.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/btn.css">
+    <!-- <link rel="stylesheet" href="/UniMed/firebaselogin/css/css.responsive/querty-btn.css"> -->
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/modal_anim.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/inputs.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/closeBtn.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/card.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/background.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/closeBtn2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/aboutUsContactUS.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/grid.css">
+    <link rel="stylesheet" href="/UniMed/firebaselogin/css/formBtn.css">
+
+</head>
+<script src="/UniMed/firebaselogin/js/createCard.js"></script>
+
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    span {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<body style="padding: 0px;">
+
+
+    <!-- Nav Bar -->
+    <nav class="Nav">
+        <div id="Logo-Burger">
+            <img id="logo-nav" src="/UniMed/firebaselogin/image/logo.png" alt="Logo">
+            <div class="burger-nav" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div id="phone"></div>
+        <div id="list-nav">
+
+            <div id="list1">
+
+                <button id="home-nav" class="button" onclick="homepage()">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Home</span>
+                </button>
+                <button id="contactus-nav" class="button">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Contact</span>
+                </button>
+                <button id="aboutus-nav" class="button" onclick="aboutUs()">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">About Us</span>
+                </button>
+                <!-- <button id="contactus-nav" class="button" onclick="contactUs()">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Contact Us</span>
+                </button> -->
+
+            </div>
+
+
+            <div id="list2">
+                <button id="Login-nav" class="button" data-for="js_basic-popup" > 
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text" id="LoginBtn__">Log In</span>
+                </button>
+                <!-- <button id="Login-nav" class="button" data-for="js_basic-popup__">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Add</span>
+                </button> -->
+                <button id="Signup-nav" class="button _signup_" data-for="js_basic-popup_">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Sign Up</span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Homepage -->
+    <!-- Profile modal -->
+    <div class="popup _js_basic-popup">
+        <div class="popup__background"></div>
+        <div class="popup__content">
+            <div class="wrapper">
+                <button class="close-button" data-for="_js_basic-popup">
+                    <div class="in">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                    <div class="out">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                </button>
+            </div>
+            <br>
+            <br>
+            <h3 class="popup__content__title" id="profile_emri">
+                
+            </h3>
+            <br>
+            <div class="form">
+                <h3 id="profile_email"></h3>
+                <br>
+                <h3 id="profile_number"></h3>
+            </div>
+            <br>
+            <br>
+            <button id="LoginBtn_" class="button" data-for="_js_basic-popup" onclick="logout()">
+                <span class="border"></span>
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+                <span class="text">Log Out</span>
+            </button>
+
+            <p>
+            </p>
+        </div>
+
+    </div>
+    <!-- Log in modal -->
+    <div class="popup js_basic-popup">
+        <div class="popup__background"></div>
+        <div class="popup__content">
+            <div class="wrapper">
+                <button class="close-button" data-for="js_basic-popup">
+                    <div class="in">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                    <div class="out">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                </button>
+            </div>
+            <h3 class="popup__content__title">
+                Log In
+            </h3>
+            <div class="form">
+                <div class="row">
+                    <input type="email" name="fancy-text" id="email_field">
+                    <label for="fancy-text">Email</label>
+                </div>
+                <div class="row">
+                    <input type="password" name="fancy-text" id="password_field" />
+                    <label for="fancy-text">Password</label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button id="LoginBtn_" class="button" data-for="js_basic-popup" onclick="login()">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Log In</span>
+                </button>
+                <br>
+            </div>
+            <button data-for="js_basic-popup"><a data-for="js_basic-popup_">Sign Up</a></button>
+            <p>
+            </p>
+        </div>
+
+    </div>
+    <div class="popup js_basic-popup__">
+        <div class="popup__background"></div>
+        <div class="popup__content">
+            <div class="wrapper">
+                <button class="close-button" data-for="js_basic-popup__">
+                    <div class="in">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                    <div class="out">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                </button>
+            </div>
+            <h3 class="popup__content__title">
+                Log In
+            </h3>
+            <div class="form    ">
+
+            <div class="row">
+                <input type="text" name="fancy-text" id="diagnoza1" />
+                <label for="fancy-text">Diagnoza:</label>
+            </div>
+            <div class="row">
+                <input type="date" name="fancy-text" id="data1" placeholder="dd/mm/yyyy" value=""/>
+                <label for="fancy-text">Data:</label>
+            </div>
+            <div class="row">
+                <textarea type="text" name="fancy-text" id="trajtimi1"></textarea>
+                <label for="fancy-text">Trajtimi:</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button id="CreateBtn_" class="button" data-for="js_basic-popup__" onclick="createCard()">
+                <span class="border"></span>
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+                <span class="text">Shto histori</span>
+            </button>
+            <br>
+            </div>    
+            <p>
+            </p>
+        </div>
+
+    </div>
+    <!-- sign up modal  -->
+    <div class="popup js_basic-popup_">
+        <div class="popup__background"></div>
+        <div class="popup__content">
+            <div class="wrapper">
+                <button class="close-button" data-for="js_basic-popup_">
+                    <div class="in">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                    <div class="out">
+                        <div class="close-button-block"></div>
+                        <div class="close-button-block"></div>
+                    </div>
+                </button>
+            </div>
+            <h3 class="popup__content__title">
+                Sign Up
+            </h3>
+
+            <div class="form">
+
+                <div class="row">
+                    <input type="text" name="fancy-text" id="txtEmri" />
+                    <label for="fancy-text">Emri</label>
+                </div>
+                <div class="row">
+                    <input type="text" name="fancy-text" id="txtMbiemri" />
+                    <label for="fancy-text">Mbiemri</label>
+                </div>
+                <div class="row">
+                    <input type="number" name="fancy-text" id="txtNrtel" />
+                    <label for="fancy-text">Nr Tel</label>
+                </div>
+
+                <div class="row">
+                    <input type="email" name="fancy-text" id="txtEmail" />
+                    <label for="fancy-text">Email</label>
+                </div>
+                <div class="row">
+                    <input type="password" name="fancy-text" id="txtPassword" />
+                    <label for="fancy-text">Password</label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <button id="SignOutBtn_" class="button" data-for="js_basic-popup_" onclick="signup()">
+                    <span class="border"></span>
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span class="text">Sign Up</span>
+                </button>
+
+            </div>
+            <button data-for="js_basic-popup_"><a data-for="js_basic-popup">Log In</a></button>
+
+            <p>
+                <!-- <button class="button" data-for="js_basic-popup">Hide Popup</button> -->
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div id="Homepage">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <div id="overlay" class="row grid">
+                    <div class="grid" id="loggedInContent">
+                        <div style="height:60px; padding-top: 40px; display: flex; padding-left: 20px;">
+                            <button id="Login-nav-" class="button addCard" data-for="js_basic-popup__" >
+                                <span class="border"></span>
+                                <span class="top"></span>
+                                <span class="right"></span>
+                                <span class="bottom"></span>
+                                <span class="left"></span>
+                                <span class="text">Add</span>
+                            </button></div>
+                        <!-- <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>24/03/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-33">
+                            <div class="card">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <button href="#" class="closeButton"></button>
+                                            <h1>Covid-19</h1>
+                                            <p>data:20/3/2021</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>trajtimi:vitamin C, paracetamol</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="container-AboutUs-ContactUs" id="loggedOutContent" style="display: none;">
+                        <div class="grid">
+                            <div class="col-33">
+                                <div class="content" id="whyUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Why should you use UniMed?</h2>
+                                        <br>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-Lack of medical history at certain times has
+                                            been presented to all of us at least once in a lifetime. The solution to
+                                            this problem is UniMed! Get access to your medical history faster with
+                                            UniMed, use UniMed to save
+                                            your time!
+                                        </p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="content" id="whyUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Perse te perdorni UniMed</h2>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-Mungesa e historikut mjekësor në kohë të
+                                            caktuara na është paraqitur të paktën një herë në jetë të gjithë neve. E
+                                            zgjidhja për këtë problem është UniMed!
+                                            Çasuni më shpejtë në historinë tuaj mjekësore me UniMed, përdorni UniMed për
+                                            ta kursyer kohën tuaj! </p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="content" id="whyUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Zašto treba da koristite UniMed?</h2>
+                                        <br>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-Manjak istorije bolesti u određenim vremenima
+                                            svima nam je predstavljen barem jednom u životu. Rešenje ovog problema je
+                                            UniMed!
+                                            Pristupite vašoj medicinskoj istoriji brže pomoću UniMed-a, koristite
+                                            UniMed da biste uštedeli vreme! </p>
+                                        <p> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Us -->
+
+                    <div class="container-AboutUs-ContactUs" style="display: none;" id="aboutUs">
+                        <div class="grid">
+                            <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+
+                                    <div>
+                                        <h2 class="Center-Title">Rreth Nesh</h2>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-UniMed është website i krijuar nga nxënësit e
+                                            “Tech
+                                            Heroes” në
+                                            vitin
+                                            2021 ku qëllimi kryesor është që përdoruesit të kenë një vend të duhur ku
+                                            mund të
+                                            shkruajnë
+                                            për
+                                            historikun e tyre mjekësor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+
+                                    <div>
+                                        <h2 class="Center-Title">Rreth Nesh</h2>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-UniMed është website i krijuar nga nxënësit e
+                                            “Tech
+                                            Heroes” në
+                                            vitin
+                                            2021 ku qëllimi kryesor është që përdoruesit të kenë një vend të duhur ku
+                                            mund të
+                                            shkruajnë
+                                            për
+                                            historikun e tyre mjekësor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+
+                                    <div>
+                                        <h2 class="Center-Title">Rreth Nesh</h2>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 5px;">-UniMed është website i krijuar nga nxënësit e
+                                            “Tech
+                                            Heroes” në
+                                            vitin
+                                            2021 ku qëllimi kryesor është që përdoruesit të kenë një vend të duhur ku
+                                            mund të
+                                            shkruajnë
+                                            për
+                                            historikun e tyre mjekësor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="container-AboutUs-ContactUs" style="display: none;" id="contactUs">
+
+                        <div class="grid">
+                            <!-- <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Na kontaktoni</h2>
+                                        <br>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <p style="margin-bottom: 5px;">Për çdo kritikë apo sugjerim na kontaktoni në:
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Email:</strong> unique.medicine@gmail.com
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Mob:</strong> 044-222-388</p>
+                                        <p style="margin-bottom: 5px;"><strong>Fax:</strong> 038-444-555</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Na kontaktoni</h2>
+                                        <br>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <p style="margin-bottom: 5px;">Për çdo kritikë apo sugjerim na kontaktoni në:
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Email:</strong> unique.medicine@gmail.com
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Mob:</strong> 044-222-388</p>
+                                        <p style="margin-bottom: 5px;"><strong>Fax:</strong> 038-444-555</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="white"></div>
+                                <div class="content" id="contactUsContent"
+                                    style="flex-direction: column; align-items: center;">
+                                    <div>
+                                        <h2 class="Center-Title">Na kontaktoni</h2>
+                                        <br>
+                                        <div class="bg">
+                                        </div>
+                                    </div>
+
+
+                                    <div>
+                                        <p style="margin-bottom: 5px;">Për çdo kritikë apo sugjerim na kontaktoni në:
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Email:</strong> unique.medicine@gmail.com
+                                        </p>
+                                        <p style="margin-bottom: 5px;"><strong>Mob:</strong> 044-222-388</p>
+                                        <p style="margin-bottom: 5px;"><strong>Fax:</strong> 038-444-555</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+
+
+                    </div>
+                    <canvas id="demo-canvas"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <!-- <script src="/UniMed/firebaselogin/login.js"></script> -->
+    <script src="/UniMed/firebaselogin/js/modal_anim.js"></script>
+    <script src="/UniMed/firebaselogin/js/login.js"></script>
+    <script src="/UniMed/firebaselogin/js/abousUsContactus.js"></script>
+    <script src="/UniMed/firebaselogin/js/index.js"></script>
+    <script src="/UniMed/firebaselogin/js/createCard.js"></script>
+</body>
+
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+<script src="/UniMed/firebaselogin/js/background.js"></script>
+
+</html>

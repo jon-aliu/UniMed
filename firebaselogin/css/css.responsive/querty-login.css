@@ -1,0 +1,664 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    
+    /* Log in */
+    .LoginBox{
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(1px);
+    }
+    .y-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .x-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Login-Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 350px;
+        background: rgba(56, 165, 249, 0.58);
+        border: 0px #85aad6 solid;
+        border-radius: 4px;
+    }
+    
+    #exit-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        justify-items: flex-start;
+        width: 18px;
+        font-size: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 15px;
+        
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+    #exit-login:a ctive{
+        color: red;
+    }
+    
+    #Login-Title{
+        color: white;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 5px;
+        cursor: default;
+    }
+    
+    .input-login{
+        padding-left: 10px;
+        font-size:15px;
+        width: 250px;
+        height: 35px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        border: 0.5px solid #75a7e4;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
+    }
+    .input-login:focus{
+        border: 2px solid #4d7db8;
+        cursor: text;
+    }
+    
+    
+    #Help-Login{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    #signup-help{
+        /* background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 35px;
+        width: 350px;
+        color: #30598C;
+        background: white;
+        border: 1px solid #30598C;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+        /* shkronja */
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px; 
+      
+    }
+    #GetH-Login{
+        cursor: pointer;
+    }
+    #GetH-Login:active{
+        color: hotpink;
+    }
+    #Signup-login{
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    #Signup-login:active{
+        color: rgb(208, 19, 211);
+    }
+}
+/* Medium small devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+ 
+    /* Log in */
+    .LoginBox{
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(1px);
+    }
+    .y-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .x-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Login-Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 450px;
+        background: rgba(56, 165, 249, 0.58);
+        border: 0px #85aad6 solid;
+        border-radius: 4px;
+    }
+    
+    #exit-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        justify-items: flex-start;
+        width: 18px;
+        font-size: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 15px;
+        
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+    #exit-login:a ctive{
+        color: red;
+    }
+    
+    #Login-Title{
+        color: white;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 5px;
+        cursor: default;
+    }
+    
+    .input-login{
+        padding-left: 10px;
+        font-size:15px;
+        width: 250px;
+        height: 40px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        border: 0.5px solid #75a7e4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+    .input-login:focus{
+        border: 2px solid #4d7db8;
+        cursor: text;
+    }
+    
+    
+    #Help-Login{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    #signup-help{
+        /* background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 35px;
+        width: 350px;
+        color: #30598C;
+        background: white;
+        border: 1px solid #30598C;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+        /* shkronja */
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px; 
+      
+    }
+    #GetH-Login{
+        cursor: pointer;
+    }
+    #GetH-Login:active{
+        color: hotpink;
+    }
+    #Signup-login{
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    #Signup-login:active{
+        color: rgb(208, 19, 211);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ 
+    /* Log in */
+    .LoginBox{
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(1px);
+    }
+    .y-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .x-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Login-Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 450px;
+        background: rgba(56, 165, 249, 0.58);
+        border: 0px #85aad6 solid;
+        border-radius: 4px;
+    }
+    
+    #exit-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        justify-items: flex-start;
+        width: 18px;
+        font-size: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 15px;
+        
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+    #exit-login:a ctive{
+        color: red;
+    }
+    
+    #Login-Title{
+        color: white;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 5px;
+        cursor: default;
+    }
+    
+    .input-login{
+        padding-left: 10px;
+        font-size:15px;
+        width: 250px;
+        height: 40px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        border: 0.5px solid #75a7e4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+    .input-login:focus{
+        border: 2px solid #4d7db8;
+        cursor: text;
+    }
+    
+    
+    #Help-Login{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    #signup-help{
+        /* background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 35px;
+        width: 350px;
+        color: #30598C;
+        background: white;
+        border: 1px solid #30598C;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+        /* shkronja */
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px; 
+      
+    }
+    #GetH-Login{
+        cursor: pointer;
+    }
+    #GetH-Login:active{
+        color: hotpink;
+    }
+    #Signup-login{
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    #Signup-login:active{
+        color: rgb(208, 19, 211);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+    
+    /* Log in */
+    .LoginBox{
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(1px);
+    }
+    .y-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .x-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Login-Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 600px;
+        background: rgba(56, 165, 249, 0.58);
+        border: 0px #85aad6 solid;
+        border-radius: 4px;
+    }
+    
+    #exit-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        justify-items: flex-start;
+        width: 18px;
+        font-size: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 15px;
+        
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+    #exit-login:active{
+        color: red;
+    }
+    
+    #Login-Title{
+        color: white;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 5px;
+        cursor: default;
+    }
+    
+    .input-login{
+        padding-left: 10px;
+        font-size:15px;
+        width: 320px;
+        height: 50px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        border: 0.5px solid #75a7e4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+    .input-login:focus{
+        border: 2px solid #4d7db8;
+        cursor: text;
+    }
+    
+    
+    #Help-Login{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    #signup-help{
+        /* background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50px;
+        width: 450px;
+        color: #30598C;
+        background: white;
+        border: 1px solid #30598C;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+        /* shkronja */
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px; 
+      
+    }
+    #GetH-Login{
+        cursor: pointer;
+    }
+    #GetH-Login:active{
+        color: hotpink;
+    }
+    #Signup-login{
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    #Signup-login:active{
+        color: gray;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+    
+    /* Log in */
+    .LoginBox{
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        backdrop-filter: blur(1px);
+    }
+    .y-div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .x-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Login-Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        width: 600px;
+        background: rgba(56, 165, 249, 0.58);
+        border: 0px #85aad6 solid;
+        border-radius: 4px;
+    }
+    
+    #exit-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        justify-items: flex-start;
+        width: 18px;
+        font-size: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 15px;
+        
+        margin-right: 15px;
+        cursor: pointer;
+        outline: none;
+    }
+    #exit-login:active{
+        color: red;
+    }
+    
+    #Login-Title{
+        color: white;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 5px;
+        cursor: default;
+    }
+    
+    .input-login{
+        padding-left: 10px;
+        font-size:15px;
+        width: 320px;
+        height: 50px;
+        margin-bottom: 10px;
+        background: #ffffff;
+        border: 0.5px solid #75a7e4;
+        box-sizing: border-box;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+    .input-login:focus{
+        border: 2px solid #4d7db8;
+        cursor: text;
+    }
+    
+    
+    #Help-Login{
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    #signup-help{
+        /* background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50px;
+        width: 450px;
+        color: #30598C;
+        background: white;
+        border: 1px solid #30598C;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+        /* shkronja */
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px; 
+      
+    }
+    #GetH-Login{
+        cursor: pointer;
+    }
+    #GetH-Login:active{
+        color: hotpink;
+    }
+    #Signup-login{
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    #Signup-login:active{
+        color: gray;
+    }}

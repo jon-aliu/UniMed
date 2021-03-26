@@ -1,0 +1,704 @@
+
+
+@media only screen and (max-width: 600px) {
+    /* Nav Bar */
+                
+ .Nav{
+    display: flex;
+    width: 100%;
+    /* height: 150px; */
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-bottom: 3px solid rgb(2, 136, 209);
+    -webkit-transition: all 0.1s ease-in-out;
+}
+#Logo-Burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 20px;
+    float: right;
+    height: 60px;
+}
+.white{
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    font-size: larger;
+    color: turquoise;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+.Nav.Menu{
+    height: 130px;
+    
+}
+
+#logo-nav{
+    display:none;
+}
+#logo-nav:active{
+    filter: brightness(3);
+}
+.burger-nav {
+    display: block;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: right;
+    padding-bottom: 2px;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(2, 136, 209);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+#list-nav{
+    display: flex;
+    /* float: left; */
+    /* align-items:flex-start; */
+    flex-direction: column;
+    opacity: 1;
+    justify-content: space-evenly;
+    /* vertical-align: middle; */
+    float: left;
+    width: 100%;
+}
+#list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
+    margin-top: 10px;
+    font-size: 40px;
+    float: left;
+}
+#home-nav, #Login-nav, #Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+}
+#home-nav:active, #Login-nav:active, #Signup-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 15px; */
+    background: rgb(2, 136, 209);
+    color: white;
+    height: 40px;
+}
+
+#service-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    
+}
+#service-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#aboutus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    
+}
+#aboutus-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#contactus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    
+}
+#contactus-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+/* #Login-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    
+}
+#Login-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+}
+#Signup-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    background: rgb(2, 136, 209);
+    color: white;
+    width: 80px;
+} */
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #logo-nav{
+        display: none;
+        /* z-index: -5; */
+     }
+     #Logo-Burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        /* margin-right: 20px; */
+        float: right;
+    }
+    .burger-nav {
+        display: block;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-left: 15px;
+        position: fixed;
+        float: right;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(2, 136, 209);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+     nav{
+        display: flex;
+        width: 100%;
+        height: 65px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 4px solid rgb(2, 136, 209);
+    }
+    #list1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+    #list2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 0px;
+        margin-left: 60px;
+        float: left;
+    }
+    #home-nav, #Login-nav, #Signup-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+    }
+
+    #service-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+        
+    }
+
+    #aboutus-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+        
+    }
+
+    #contactus-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+        
+    }
+
+    /* #Login-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+        
+    } */
+
+    /* #Signup-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        font-size: 13px;
+        font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        color: rgb(2, 136, 209);
+    } */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #Logo-Burger{
+        display: none;
+    }
+    #logo-nav{
+        display: block;
+        /* z-index: -5; */
+     }
+ nav{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(2, 136, 209);
+}
+#logo-nav{
+    width: 143px;
+    height: 72px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#logo-nav:active{
+    filter: brightness(3);
+}
+#list-nav{
+    display: flex;
+    align-items: center;
+}
+#list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+#list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+/* #Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 13px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+} */
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .burger-nav{
+        display: none;
+    }
+    #logo-nav{
+        display: block;
+     }
+     /* Nav Bar */
+ nav{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(2, 136, 209);
+}
+#logo-nav{
+    width: 143px;
+    height: 72px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#logo-nav:active{
+    filter: brightness(3);
+}
+#list-nav{
+    display: flex;
+    align-items: center;
+}
+#list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 0px;
+}
+#list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right:20px;
+    margin-left: 0px;
+}
+#home-nav, #Login-nav, #Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    /* font-size: 13px; */
+    
+    
+}
+#home-nav:active .bottom, #home-nav:hover .bottom, #home-nav:active .top, #home-nav:hover .top{
+    width: 100px;
+}
+#home-nav:active, #Login-nav:active, #Signup-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+    line-height: 30px;
+}
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Nav Bar */
+
+#logo-nav{
+    display:block;
+}
+#Logo-Burger{
+    display: flex
+}
+#burger-nav{
+    display: none;
+}         
+
+ nav{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(2, 136, 209);
+}
+#logo-nav{
+    width: 143px;
+    height: 72px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#logo-nav:active{
+    filter: brightness(3);
+}
+#list-nav{
+    display: flex;
+    align-items: center;
+}
+#list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+#list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+#home-nav, #Login-nav, #Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 13px;
+    
+}
+#home-nav:active, #Login-nav:active, #Signup-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#service-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+}
+#service-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#aboutus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 13px;
+    
+}
+#aboutus-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#contactus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 110px;
+    font-size: 100%;
+    
+}
+#contactus-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+.addCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 130px;
+    font-size: 13px;
+    background: transparent;
+}
+.addCard:active, .addCard:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+    width: 130px;
+}
+
+/* #Login-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+}
+#Login-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+}
+#Signup-nav:active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+} */
+
+
+}

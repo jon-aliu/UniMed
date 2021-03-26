@@ -1,0 +1,197 @@
+ /* Nav Bar */
+                
+ nav{
+     /* top: 7px; */
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid rgb(2, 136, 209);
+    background-color: white;
+    z-index: 2;
+    position:fixed; 
+}
+#logo-nav{
+    width: 143px;
+    height: 72px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#logo-nav:active{
+    filter: brightness(3);
+}
+#list-nav{
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+#list1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+#list2{
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+ #home-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+}
+#service-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+} 
+#aboutus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    font-size: 100%;
+    
+} 
+#home-nav:hover{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#service-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    
+}
+#service-nav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#aboutus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    margin-right: 10px;
+    width: 90px;
+    
+}
+#aboutus-nav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#contactus-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    font-size: 100%;
+    height: 100%;
+    width: 110px;
+    
+}
+#contactus-nav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+} 
+
+#Login-nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    font-size: 100%;
+    height: 100%;
+    width: 90px;
+    
+}
+#Login-nav:hover #aboutus-nav:hover #contactus-nav:hover #service-nav:hover #home-nav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+    color: white;
+}
+#Signup-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(2, 136, 209);
+    font-size: 100%;
+    margin-right: 10px;
+    width: 90px;
+    height: 30px;
+    
+}
+#Signup-nav:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background: rgb(2, 136, 209);
+
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+}

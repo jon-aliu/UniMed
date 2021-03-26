@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+    }
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 350px;
+    background-color: #7BBAEA;
+    border: 2px #30598c solid;
+    border-radius: 20px;
+    
+}
+.input{
+    padding-left: 10px;
+    font-size:15px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 3px solid #75a7e4;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    
+}
+#LoginBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background: #30598C;
+    border: 1px solid rgba(75, 112, 158, 0.62);
+    box-shadow: inset 5px 5px 10px rgba(123, 186, 234, 0.5);
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    /* shkronjat */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+#head{
+    color: #30598C;
+    font-family: 'Bad Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 5px;
+}
+.fP{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 3px;
+
+color: #30598C;
+}
+#signuphelp{
+    /* background */
+    text-align: center;
+    height: 30px;
+    width: 300px;
+    color: #30598C;
+    background: rgba(251, 248, 248, 0.36);
+    border: 1px solid #30598C;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 90px;
+    /* shkronja */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px; 
+
+}
+.Verify-text{
+    font-family: serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 0.5px;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+</style>
+<body>
+    
+    <div class="LoginBox" style="margin: 40px;">
+        <div class="login">
+            <h3 id="head">Log in</h3>
+            <input type="text" name="" class="input" placeholder="Email or Phone Number" id="EmailLogin">
+            <input type="password" name="" class="input" placeholder="Password" id="PasswordLogin">
+            <button id="LoginBtn">Log in</button>
+            <p class="fP">Forgotten your log in details? <span><b>Get help with logging in. </b></span> </p>
+            <h4 id="signuphelp" >Don't have an account? <b> Sign up </b></h4>
+        </div>
+    </div>
+
+    <div class="SignupBox" style="margin: 40px;">
+        <div class="login">
+            <h3 id="head">Sign up</h3>
+            <input type="text" name="" class="input" placeholder="Full Name" id="EmailLogin">
+            <input type="text" name="" class="input" placeholder="Email or Phone Number" id="EmailLogin">
+            <input type="password" name="" class="input" placeholder="Password" id="PasswordLogin">
+            <input type="password" name="" class="input" placeholder="Repeat Password" id="PasswordLogin">
+            <button id="LoginBtn">Create an Acoount</button>
+            <h4 id="signuphelp" style="margin: 20px;" >i have a account. <b> Login </b></h4>
+        </div>
+    </div>
+
+    <div class="VerifyBox" style="margin: 40px;">
+        <div class="login">
+            <h3 id="head">Verify</h3>
+            <p class="Verify-text">To enter to your account you must need to verify <br>
+            it. we send you a code on <span><b> email@gmail.com </b></span> <br>
+            Please wrote that code in down platform.</p>
+            <input type="text" name="" class="input" placeholder="Code" id="EmailLogin">
+            <button id="LoginBtn">Sumbit</button>
+            <p class="fP">The code didn't come. <span> <b>Resend</b> </span> </p>
+        </div>
+    </div>
+    
+</body>
+</html>

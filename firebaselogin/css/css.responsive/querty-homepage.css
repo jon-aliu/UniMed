@@ -1,0 +1,301 @@
+@media only screen and (max-width: 400px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #whydiv{
+        width: 150px;
+        height: 70px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin: 100px 10px 0px 0px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 50%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 40%;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 300px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #whydiv{
+        width: 200px;
+        height: 110px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin: 100px 20px 0px 0px ;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 75%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 60%;
+    }
+}
+@media only screen and (min-width: 500px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 350px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #whydiv{
+        width: 200px;
+        height: 110px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin: 150px 20px 0px 0px ;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 75%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 60%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 350px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #whydiv{
+        width: 200px;
+        height: 110px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 75%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 60%;
+    }
+    
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 200px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #whydiv{
+        width: 230px;
+        height: 130px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 90%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 70%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 500px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #whydiv{
+        width: 230px;
+        height: 130px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 90%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 70%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 550px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    #whydiv{
+        width: 270px;
+        height: 170px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 200px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 110%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 80%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 640px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+    #whydiv{
+        width: 270px;
+        height: 170px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 200px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 110%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 80%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Homepage */
+
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg.jpg);
+        width: 100%;
+        height: 740px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    #whydiv{
+        width: 350px;
+        height: 200px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 200px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 150%;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #Homepage{
+        background-image: url(/UniMed/firebaselogin/image/flat-hand-drawn-hospital-reception-scene_52683-54613.jpg);
+        width: 100%;
+        height: 840px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+
+    #whydiv{
+        width: 450px;
+        height: 250px;
+        background-color: rgba(135, 207, 235, 0.707);
+        border: white 1px solid;
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-bottom: 300px;
+    }
+    #whyheading{
+        color: white;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    #whytext{
+        color: white;
+        padding-left: 30px;
+        font-size: 115%;
+    }
+   
+}

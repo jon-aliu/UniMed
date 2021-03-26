@@ -1,0 +1,815 @@
+@media only screen and (max-width: 600px) {}
+
+
+
+
+@media only screen and (min-width: 600px) {}
+
+
+
+
+@media only screen and (min-width: 768px) {}
+html, body, .wrapper {
+    height: 100%;
+  }
+
+  .button {
+    position:relative;
+    display: block;
+    width: 70px;
+    height: 32px;
+    color: #0288D1;
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    z-index: 0;
+    box-sizing: border-box;
+    margin: 20px;
+  
+  }
+  .button span {
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  .button .border {
+    border: 1px solid white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+  .button .top, .button .left, .button .right,.button .bottom {
+    background-color: #0288D1;
+    height: 1px;
+    width: 0;
+  }
+  
+  .button .left, .button .right {
+    height: 0;
+    width: 1px;
+  }
+  .button .top {
+    top: -5px;
+    left: -15px;
+  }
+  .button .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  .button .left {
+    top: -15px;
+    right: -5px;
+  }
+  .button .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  .button:hover {
+      color: #0288D1;
+      }
+  
+  
+  .button:hover .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: #0288D1;
+  
+  }
+  .button:hover .top, .button:hover .bottom {
+    width: 70px;
+  }
+  .button:hover .left, .button:hover .right {
+    height: 40px;
+  }
+  .button:hover .top {
+    left: -5px;
+  }
+  .button:hover .bottom {
+    right: -5px;
+  }
+  .button:hover .left {
+    top: -5px;
+  }
+  .button:hover .right {
+    bottom: -5px;
+  }
+  .button .text {
+    position: relative;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 17px;
+  }
+  .button:hover .text{
+    color:white;
+  }
+  
+  #contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom{
+    width: 80px;
+  }
+  
+  
+  
+  #LoginBtn{
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 32px;
+    color: white;
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  #LoginBtn.span{
+    position: absolute;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    z-index: 0;
+  }
+  
+  #LoginBtn .border {
+    border: 1px solid transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+  }
+  #LoginBtn .top, #LoginBtn .left, #LoginBtn .right,#LoginBtn .bottom {
+    background-color: #0288D1;
+    height: 1px;
+    width: 0;
+  }
+  
+  #LoginBtn:hover {
+    color: white;
+    }
+  
+  
+  #LoginBtn:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #0288D1;
+  
+  }
+  
+  #LoginBtn:hover .text{
+    color:#0288D1;
+  }
+  
+  
+  #LoginBtn .left, #LoginBtn .right {
+    height: 0;
+    width: 1px;
+  }
+  #LoginBtn .top {
+    top: -5px;
+    left: -15px;
+  }
+  #LoginBtn .bottom {
+    bottom: -5px;
+    right: -15px;
+  }
+  #LoginBtn .left {
+    top: -15px;
+    right: -5px;
+  }
+  #LoginBtn .right {
+    bottom: -15px;
+    left: -5px;
+  }
+  #LoginBtn:hover {
+      color: #0288D1;
+      }
+  
+  
+  #LoginBtn:hover .border {
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background-color: #0288D1;
+  
+  }
+  #LoginBtn:hover .top, #LoginBtn:hover .bottom {
+    width: 100px;
+  }
+  #LoginBtn:hover .left, #LoginBtn:hover .right {
+    height: 40px;
+  }
+  #LoginBtn:hover .top {
+    left: -5px;
+  }
+  #LoginBtn:hover .bottom {
+    right: -5px;
+  }
+  #LoginBtn:hover .left {
+    top: -5px;
+  }
+  #LoginBtn:hover .right {
+    bottom: -5px;
+  }
+  #LoginBtn .text {
+    position: relative;
+    display: inline;
+    letter-spacing: 0.03em;
+    display: table-cell;
+    text-align: center;
+    width: 130px;
+    line-height: 32px;
+    color: #0288D1;
+  }
+  #LoginBtn:hover .text{
+    color:white;
+  }
+  
+  
+  
+  #SignUpFromLogIn{
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 32px;
+    color: white;
+    font-size: 21px;
+    line-height: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* .button .text:hover{
+      color:#0288D1
+  } */
+  
+  
+  
+  
+
+
+
+
+@media only screen and (min-width: 992px) {
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+/* variables */
+html, body, .wrapper {
+  height: 100%;
+}
+
+
+
+
+.button {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 32px;
+  color: #0288D1;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  z-index: 0;
+  box-sizing: border-box;
+
+}
+.button span {
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
+}
+.button .border {
+  border: 1px solid white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+.button .top, .button .left, .button .right,.button .bottom {
+  background-color: #0288D1;
+  height: 1px;
+  width: 0;
+}
+
+.button .left, .button .right {
+  height: 0;
+  width: 1px;
+}
+.button .top {
+  top: -5px;
+  left: -15px;
+}
+.button .bottom {
+  bottom: -5px;
+  right: -15px;
+}
+.button .left {
+  top: -15px;
+  right: -5px;
+}
+.button .right {
+  bottom: -15px;
+  left: -5px;
+}
+.button:hover {
+    color: #0288D1;
+    }
+
+
+.button:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #0288D1;
+
+}
+.button:hover .top, .button:hover .bottom {
+  width: 100px;
+}
+.button:hover .left, .button:hover .right {
+  height: 40px;
+}
+.button:hover .top {
+  left: -5px;
+}
+.button:hover .bottom {
+  right: -5px;
+}
+.button:hover .left {
+  top: -5px;
+}
+.button:hover .right {
+  bottom: -5px;
+}
+.button .text {
+  position: relative;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 32px;
+}
+.button:hover .text{
+  color:white;
+}
+
+#contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom{
+  width: 110px;
+}
+
+
+
+#LoginBtn{
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: white;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-sizing: border-box;
+
+}
+
+#LoginBtn.span{
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
+}
+
+#LoginBtn .border {
+  border: 1px solid transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+#LoginBtn .top, #LoginBtn .left, #LoginBtn .right,#LoginBtn .bottom {
+  background-color: #0288D1;
+  height: 1px;
+  width: 0;
+}
+
+#LoginBtn:hover {
+  color: white;
+  }
+
+
+#LoginBtn:hover .border {
+top: -5px;
+bottom: -5px;
+left: -5px;
+right: -5px;
+background-color: #0288D1;
+
+}
+
+#LoginBtn:hover .text{
+  color:#0288D1;
+}
+
+
+#LoginBtn .left, #LoginBtn .right {
+  height: 0;
+  width: 1px;
+}
+#LoginBtn .top {
+  top: -5px;
+  left: -15px;
+}
+#LoginBtn .bottom {
+  bottom: -5px;
+  right: -15px;
+}
+#LoginBtn .left {
+  top: -15px;
+  right: -5px;
+}
+#LoginBtn .right {
+  bottom: -15px;
+  left: -5px;
+}
+#LoginBtn:hover {
+    color: #0288D1;
+    }
+
+
+#LoginBtn:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #0288D1;
+
+}
+#LoginBtn:hover .top, #LoginBtn:hover .bottom {
+  width: 100px;
+}
+#LoginBtn:hover .left, #LoginBtn:hover .right {
+  height: 40px;
+}
+#LoginBtn:hover .top {
+  left: -5px;
+}
+#LoginBtn:hover .bottom {
+  right: -5px;
+}
+#LoginBtn:hover .left {
+  top: -5px;
+}
+#LoginBtn:hover .right {
+  bottom: -5px;
+}
+#LoginBtn .text {
+  position: relative;
+  display: inline;
+  letter-spacing: 0.03em;
+  display: table-cell;
+  text-align: center;
+  width: 130px;
+  line-height: 32px;
+  color: #0288D1;
+}
+#LoginBtn:hover .text{
+  color:white;
+}
+
+
+
+#SignUpFromLogIn{
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: white;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* .button .text:hover{
+    color:#0288D1
+} */
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+/* variables */
+html, body, .wrapper {
+  height: 100%;
+}
+.button {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: #0288D1;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  z-index: 0;
+  box-sizing: border-box;
+
+}
+.button span {
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
+}
+.button .border {
+  border: 1px solid white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+.button .top, .button .left, .button .right,.button .bottom {
+  background-color: #0288D1;
+  height: 1px;
+  width: 0;
+}
+
+.button .left, .button .right {
+  height: 0;
+  width: 1px;
+}
+.button .top {
+  top: -5px;
+  left: -15px;
+}
+.button .bottom {
+  bottom: -5px;
+  right: -15px;
+}
+.button .left {
+  top: -15px;
+  right: -5px;
+}
+.button .right {
+  bottom: -15px;
+  left: -5px;
+}
+.button:hover {
+    color: #0288D1;
+    }
+
+
+.button:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #0288D1;
+
+}
+.button:hover .top, .button:hover .bottom {
+  width: 100px;
+}
+.button:hover .left, .button:hover .right {
+  height: 40px;
+}
+.button:hover .top {
+  left: -5px;
+}
+.button:hover .bottom {
+  right: -5px;
+}
+.button:hover .left {
+  top: -5px;
+}
+.button:hover .right {
+  bottom: -5px;
+}
+.button .text {
+  position: relative;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 32px;
+}
+.button:hover .text{
+  color:white;
+}
+
+#contactus-nav.button:hover .top, #contactus-nav.button:hover .bottom{
+  width: 120px;
+}
+#LoginBtn{
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: white;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-sizing: border-box;
+
+}
+#LoginBtn.span{
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
+}
+
+#LoginBtn .border {
+  border: 1px solid transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+#LoginBtn .top, #LoginBtn .left, #LoginBtn .right,#LoginBtn .bottom {
+  background-color: #0288D1;
+  height: 1px;
+  width: 0;
+}
+
+#LoginBtn:hover {
+  color: white;
+  }
+
+
+#LoginBtn:hover .border {
+top: -5px;
+bottom: -5px;
+left: -5px;
+right: -5px;
+background-color: #0288D1;
+
+}
+
+#LoginBtn:hover .text{
+  color:#0288D1;
+}
+
+
+#LoginBtn .left, #LoginBtn .right {
+  height: 0;
+  width: 1px;
+}
+#LoginBtn .top {
+  top: -5px;
+  left: -15px;
+}
+#LoginBtn .bottom {
+  bottom: -5px;
+  right: -15px;
+}
+#LoginBtn .left {
+  top: -15px;
+  right: -5px;
+}
+#LoginBtn .right {
+  bottom: -15px;
+  left: -5px;
+}
+#LoginBtn:hover {
+    color: #0288D1;
+    }
+
+
+#LoginBtn:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background-color: #0288D1;
+
+}
+#LoginBtn:hover .top, #LoginBtn:hover .bottom {
+  width: 100px;
+}
+#LoginBtn:hover .left, #LoginBtn:hover .right {
+  height: 40px;
+}
+#LoginBtn:hover .top {
+  left: -5px;
+}
+#LoginBtn:hover .bottom {
+  right: -5px;
+}
+#LoginBtn:hover .left {
+  top: -5px;
+}
+#LoginBtn:hover .right {
+  bottom: -5px;
+}
+#LoginBtn .text {
+  position: relative;
+  display: inline;
+  letter-spacing: 0.03em;
+  display: table-cell;
+  text-align: center;
+  width: 130px;
+  line-height: 32px;
+  color: #0288D1;
+}
+#LoginBtn:hover .text{
+  color:white;
+}
+
+
+
+#SignUpFromLogIn{
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: white;
+  font-size: 21px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* .button .text:hover{
+    color:#0288D1
+} */
+
+
+
+}
+
+
+

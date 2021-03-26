@@ -1,0 +1,13 @@
+#container {
+    position: relative;
+      
+  }
+
+  canvas{
+    position: absolute;
+    z-index: -9;
+  }
+ #overlay , #overlay_{
+    position: absolute;
+
+  }

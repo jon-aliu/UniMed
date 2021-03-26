@@ -1,0 +1,114 @@
+/* Footer Part */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(215, 221, 236, 0.5);
+    border-top: 4px solid #0288D1;
+}
+
+
+#FooterP{
+    display: flex;
+    margin-left: 10px;
+}
+#Logo-footer{
+    width: 434px;
+    height: 232px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+#Logo-footer:active{
+    filter: brightness(0.2);
+}
+.List-Footer{
+    margin-left: 100px;
+}
+.Title-Footer{
+    color: #233b5c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    cursor: default;
+}
+
+.Element1-Footer{
+    font-size: 120%;
+    color: #30598C;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: default;
+}
+
+
+#footer-email{
+    cursor: pointer;
+    color: #0288D1;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#footer-email:active{
+    color: red;
+}
+#footer-email1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-Nr{
+    cursor: pointer;
+    color: #0288D1;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#footer-Nr:active{
+    color: red;
+}
+#footer-Nr1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-IG{
+    cursor: pointer;
+    color: #0288D1;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#footer-IG:active{
+    color: red;
+}
+#footer-IG1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-twitter{
+    cursor: pointer;
+    color: #0288D1;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+#footer-twitter:active{
+    color: red;
+}
+#footer-twitter1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+.Rights-Footer{
+    margin-left: 20px;
+    color: #0288D1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: default;
+}

@@ -1,0 +1,509 @@
+@media only screen and (max-width: 600px) {
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: rgba(236, 218, 215, 0.5);
+        border-top: 4px solid #38A5F9;
+        
+    }
+    
+    
+    #FooterP{
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    #Logo-footer{
+        width: 217px;
+        height: 116px;
+        margin-top: 10px;
+        margin-left: 0px;
+        align-self: center;
+        cursor: pointer;
+        
+    }
+    #Logo-footer:active{
+        filter: brightness(0.2);
+    }
+    .List-Footer{
+        margin-left: 10px;
+    }
+    .Title-Footer{
+        color: #233b5c;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    
+    .Element1-Footer{
+        font-size: 11px;
+        color: #30598C;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    
+    #footer-email{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-email:active{
+        color: red;
+    }
+    #footer-email1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-Nr{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-Nr:active{
+        color: red;
+    }
+    #footer-Nr1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-IG{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-IG:active{
+        color: red;
+    }
+    #footer-IG1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-twitter{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-twitter:active{
+        color: red;
+    }
+    #footer-twitter1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    .Rights-Footer{
+        margin-left: 20px;
+        font-size: 12px;
+        color: #38A5F9;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: rgba(236, 218, 215, 0.5);
+        border-top: 4px solid #38A5F9;
+        
+    }
+    
+    
+    #FooterP{
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    #Logo-footer{
+        width: 217px;
+        height: 116px;
+        margin-top: 10px;
+        margin-left: 0px;
+        align-self: center;
+        cursor: pointer;
+        
+    }
+    #Logo-footer:active{
+        filter: brightness(0.2);
+    }
+    .List-Footer{
+        margin-left: 10px;
+    }
+    .Title-Footer{
+        color: #233b5c;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    
+    .Element1-Footer{
+        font-size: 11px;
+        color: #30598C;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    
+    #footer-email{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-email:active{
+        color: red;
+    }
+    #footer-email1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-Nr{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-Nr:active{
+        color: red;
+    }
+    #footer-Nr1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-IG{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-IG:active{
+        color: red;
+    }
+    #footer-IG1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-twitter{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-twitter:active{
+        color: red;
+    }
+    #footer-twitter1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    .Rights-Footer{
+        margin-left: 20px;
+        font-size: 12px;
+        color: #38A5F9;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: rgba(236, 218, 215, 0.5);
+        border-top: 4px solid #38A5F9;
+        
+    }
+    
+    
+    #FooterP{
+        display: flex;
+        margin-left: 10px;
+        flex-direction: row;
+        align-self: flex-start;
+    }
+    #Logo-footer{
+        width: 217px;
+        height: 116px;
+        margin-top: 10px;
+        margin-left: 0px;
+        align-self: center;
+        cursor: pointer;
+        
+    }
+    #Logo-footer:active{
+        filter: brightness(0.2);
+    }
+    .List-Footer{
+        margin-left: 10px;
+    }
+    .Title-Footer{
+        color: #233b5c;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    
+    .Element1-Footer{
+        font-size: 11px;
+        color: #30598C;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    
+    
+    #footer-email{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-email:active{
+        color: red;
+    }
+    #footer-email1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-Nr{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-Nr:active{
+        color: red;
+    }
+    #footer-Nr1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-IG{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-IG:active{
+        color: red;
+    }
+    #footer-IG1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    
+    #footer-twitter{
+        cursor: pointer;
+        color: #38A5F9;
+        font-family: 'ABeeZee', sans-serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    #footer-twitter:active{
+        color: red;
+    }
+    #footer-twitter1{
+        color: #30598C;
+        font-size: 11px;
+    }
+    
+    .Rights-Footer{
+        margin-left: 20px;
+        font-size: 12px;
+        color: #38A5F9;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .List-Footer{
+        margin-left: 60px;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .List-Footer{
+        margin-left: 140px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Footer Part */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(215, 221, 236, 0.5);
+    border-top: 4px solid #38A5F9;
+}
+
+
+#FooterP{
+    display: flex;
+    margin-left: 10px;
+}
+#Logo-footer{
+    width: 334px;
+    height: 152px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+#Logo-footer:active{
+    filter: brightness(0.2);
+}
+.List-Footer{
+    margin-left: 100px;
+}
+.Title-Footer{
+    color: #233b5c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+}
+
+.Element1-Footer{
+    font-size: 120%;
+    color: #30598C;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+#footer-email{
+    cursor: pointer;
+    color: #38A5F9;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 100%;
+}
+#footer-email:active{
+    color: red;
+}
+#footer-email1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-Nr{
+    cursor: pointer;
+    color: #38A5F9;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 100%;
+}
+#footer-Nr:active{
+    color: red;
+}
+#footer-Nr1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-IG{
+    cursor: pointer;
+    color: #38A5F9;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 100%;
+}
+#footer-IG:active{
+    color: red;
+}
+#footer-IG1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+
+#footer-twitter{
+    cursor: pointer;
+    color: #38A5F9;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 100%;
+}
+#footer-twitter:active{
+    color: red;
+}
+#footer-twitter1{
+    color: #30598C;
+    font-size: 20px;
+}
+
+.Rights-Footer{
+    margin-left: 20px;
+    color: #38A5F9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    #Logo-footer{
+        width: 434px;
+        height: 232px;
+        margin-top: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+        
+    }
+}

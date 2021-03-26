@@ -1,0 +1,84 @@
+#contactUs, #aboutUs{
+    margin-top: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(/UniMed/firebaselogin/image/mal.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* opacity: 0.9; */
+    overflow: hidden;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    z-index: -11;
+}
+
+
+#contactUsContent, #aboutUsContent    {
+    margin-top: 50px;
+    display: flex;
+    margin: 20px;
+    margin-left: 60px;
+    justify-content: center;
+    text-align: center;   
+    width: 380px;
+    background: rgba(0, 130, 223, 0.8);
+    border: 0px rgb(133, 169, 214) solid;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: justify;
+}
+#contactUsContent p, #aboutUsContent p{
+    padding: 20px;
+    /* padding-bottom: 0px; */
+}
+#contactUsContent h2, #contactUsContent p, #aboutUsContent h2, #aboutUsContent p{
+    color:#ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+#aboutUsContent:after{
+    content: "";
+    display: inline-block;
+}
+
+
+#whyUsContent{
+    margin-top: 100px;
+    margin-left: 80px;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    text-align: center;   
+    width: 380px;
+    background: rgba(0, 130, 223, 0.8);
+    border: 0px rgb(133, 169, 214) solid;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: justify;
+}
+#whyUsContent:after{
+    content: "";
+    display: inline-block;
+}
+#whyUsContent p{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+#contactUsContent h2, #contactUsContent p{
+    color:#ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+padding: 20px;
+}
+
+
+h1, h2, h3, h4{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}

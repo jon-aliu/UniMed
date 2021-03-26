@@ -1,0 +1,731 @@
+/* * {
+    box-sizing: border-box;
+  }
+  
+
+  html.modal-active, body.modal-active {
+    overflow: hidden;
+  }
+  
+  #modal-container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
+  }
+  #modal-container.six {
+    transform: scale(1);
+  }
+  #modal-container.six .modal-background {
+    background: rgba(0, 0, 0, 0);
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six .modal-background .modal {
+    background-color: transparent;
+    animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six .modal-background .modal h2, #modal-container.six .modal-background .modal p {
+    opacity: 0;
+    position: relative;
+    animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six .modal-background .modal .modal-svg rect {
+    animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six.out {
+    animation: quickScaleDown 0s 0.5s linear forwards;
+  }
+  #modal-container.six.out .modal-background {
+    animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six.out .modal-background .modal {
+    animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six.out .modal-background .modal h2, #modal-container.six.out .modal-background .modal p {
+    animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container.six.out .modal-background .modal .modal-svg rect {
+    animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  #modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+  }
+  #modal-container .modal-background .modal {
+    background: white;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 300;
+    position: relative;
+  }
+  #modal-container .modal-background .modal h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  #modal-container .modal-background .modal p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #modal-container .modal-background .modal .modal-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+  }
+  #modal-container .modal-background .modal .modal-svg rect {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 778;
+    stroke-dashoffset: 778;
+  }
+  
+  .content {
+    min-height: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    z-index: 0;
+  }
+  .content h1 {
+    padding: 75px 0 30px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .content .buttons {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .content .buttons .button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px;
+    background: red;
+    font-size: 18px;
+    background-color: #efefef;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .content .buttons .button:hover {
+    color: white;
+    background: #009bd5;
+  }
+  
+  @keyframes unfoldIn {
+    0% {
+      transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+      transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+      transform: scaleY(1) scaleX(1);
+    }
+  }
+  @keyframes unfoldOut {
+    0% {
+      transform: scaleY(1) scaleX(1);
+    }
+    50% {
+      transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+      transform: scaleY(0.005) scaleX(0);
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      background: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      background: rgba(0, 0, 0, 0.7);
+    }
+    100% {
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8) translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8) translateY(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes scaleBack {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.85);
+    }
+  }
+  @keyframes scaleForward {
+    0% {
+      transform: scale(0.85);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes quickScaleDown {
+    0% {
+      transform: scale(1);
+    }
+    99.9% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes slideUpLarge {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  @keyframes slideDownLarge {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  @keyframes moveUp {
+    0% {
+      transform: translateY(150px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(150px);
+    }
+  }
+  @keyframes blowUpContent {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    99.9% {
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes blowUpContentTwo {
+    0% {
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes blowUpModal {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes blowUpModalTwo {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes roadRunnerIn {
+    0% {
+      transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
+    }
+    70% {
+      transform: translateX(30px) skewX(0deg) scaleX(0.9);
+    }
+    100% {
+      transform: translateX(0px) skewX(0deg) scaleX(1);
+    }
+  }
+  @keyframes roadRunnerOut {
+    0% {
+      transform: translateX(0px) skewX(0deg) scaleX(1);
+    }
+    30% {
+      transform: translateX(-30px) skewX(-5deg) scaleX(0.9);
+    }
+    100% {
+      transform: translateX(1500px) skewX(30deg) scaleX(1.3);
+    }
+  }
+  @keyframes sketchIn {
+    0% {
+      stroke-dashoffset: 778;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes sketchOut {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 778;
+    }
+  }
+  @keyframes modalFadeIn {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+  @keyframes modalFadeOut {
+    0% {
+      background-color: white;
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  @keyframes modalContentFadeIn {
+    0% {
+      opacity: 0;
+      top: -20px;
+    }
+    100% {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  @keyframes modalContentFadeOut {
+    0% {
+      opacity: 1;
+      top: 0px;
+    }
+    100% {
+      opacity: 0;
+      top: -20px;
+    }
+  }
+  @keyframes bondJamesBond {
+    0% {
+      transform: translateX(1000px);
+    }
+    80% {
+      transform: translateX(0px);
+      border-radius: 75px;
+      height: 75px;
+      width: 75px;
+    }
+    90% {
+      border-radius: 3px;
+      height: 182px;
+      width: 247px;
+    }
+    100% {
+      border-radius: 3px;
+      height: 162px;
+      width: 227px;
+    }
+  }
+  @keyframes killShot {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(300px) rotate(45deg);
+      opacity: 0;
+    }
+  }
+  @keyframes fadeToRed {
+    0% {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    100% {
+      background-color: rgba(255, 0, 0, 0.8);
+    }
+  }
+  @keyframes slowFade {
+    0% {
+      opacity: 1;
+    }
+    99.9% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+  
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding: 24px 32px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  /* border-bottom: 1px solid #ddd; */
+  font-size: 32px;
+  /* font-weight: 100; */
+  /* color: #626262; */
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #2196f3;
+}
+
+input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+input[type=text] {
+  /* width: 400px; */
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+
+
+/**
+ * Popups.
+ */
+.popup {
+  visibility: hidden;
+  transition: visibility 0ms linear 0.3s;
+}
+.popup--visible {
+  visibility: visible;
+  transition: visibility 0ms;
+}
+
+.popup__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.popup--visible .popup__background {
+  opacity: 1;
+}
+.popup__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10001;
+  min-width: 400px;
+  
+  padding: 25px 50px;
+  background: rgba(209, 236, 255, 0.877);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-animation: hide-popup 0.3s forwards;
+          animation: hide-popup 0.3s forwards;
+  /**
+   * Popup types.
+   */
+}
+.popup--visible .popup__content {
+  -webkit-animation: show-popup 0.3s forwards;
+          animation: show-popup 0.3s forwards;
+}
+.popup--icon .popup__content {
+  padding-top: 130px;
+  /**
+   * Animations on opened popups.
+   *
+   * We need to prepend ".popup--visible" with no space to "&" to match the
+   * an opened popup: ".popup--visible.popup--icon".
+   *
+   * Therefore we need the "at-root" function to break out of nesting as well as the
+   * "selector-append" function to append parent selectors without space.
+   *
+   * Details:
+   *  - https://css-tricks.com/the-sass-ampersand/
+   *  - http://sass-lang.com/documentation/Sass/Script/Functions.html#selector_append-instance_method
+   */
+  /**
+   * Different popup icon styles
+   *
+   * E.g. selector for type question: ".popup--icon.-question" to match class="popup--icon -question"
+   *
+   * To have an easier selector in SCSS we use a little workaround and rearrange the selectors:
+   *  ".-question.popup--icon" is also matching class="popup--icon -question"
+   */
+}
+.popup--icon .popup__content:before, .popup--icon .popup__content:after {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 90px;
+  width: 90px;
+}
+.popup--icon .popup__content:before {
+  content: "";
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  transform: translateX(-50%) scale(1, 0);
+  opacity: 0;
+}
+.popup--icon .popup__content:after {
+  content: "✓";
+  line-height: 90px;
+  font-size: 45px;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+}
+.popup--visible.popup--icon .popup__content:before {
+  -webkit-animation: show-icon-cirlce 0.3s forwards 0.15s;
+          animation: show-icon-cirlce 0.3s forwards 0.15s;
+}
+.popup--visible.popup--icon .popup__content:after {
+  -webkit-animation: show-icon 0.3s forwards 0.3s;
+          animation: show-icon 0.3s forwards 0.3s;
+}
+
+
+.popup__content__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 100;
+  color: #0288D1;
+  text-align: center;
+  
+}
+
+
+/**
+ * Popup animations.
+ * Based on Sweet Alert: "https://t4t5.github.io/sweetalert/"
+ */
+@-webkit-keyframes show-popup {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes show-popup {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes hide-popup {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes hide-popup {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+}
+/**
+ * Icon animations.
+ */
+@-webkit-keyframes show-icon {
+  0% {
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes show-icon {
+  0% {
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes show-icon-cirlce {
+  0% {
+    transform: translateX(-50%) scale(1, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes show-icon-cirlce {
+  0% {
+    transform: translateX(-50%) scale(1, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1, 1);
+    opacity: 1;
+  }
+}
