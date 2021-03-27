@@ -32,7 +32,8 @@ const firebaseConfig = {
           document.getElementById("user_NrTel").innerHTML = "NrTel:" + data.nrtel;
           var his = data.his
           console.log(his.indexOf[1])
-          CardCreate()
+          
+          
           function CardCreate() {
             for (i = 0; i < his.length; i++) {
               let cardId = i
@@ -68,6 +69,7 @@ const firebaseConfig = {
               div_body.appendChild(btn_delete)
             }
           }
+          CardCreate()
         } else {
           // doc.data() will be undefined in this case
           console.log("No such document!");
