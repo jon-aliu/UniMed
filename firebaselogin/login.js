@@ -36,7 +36,7 @@ const firebaseConfig = {
           
           function CardCreate() {
             for (i = 0; i < his.length; i++) {
-              let cardId = i
+              
               var div_card = document.createElement('div')
               div_card.classList.add('card')
               div_card.classList.add('text-dark')
@@ -61,6 +61,7 @@ const firebaseConfig = {
               btn_delete.style.background="#FF0000"
               btn_delete.innerHTML = 'Delete'
               btn_delete.addEventListener('click', function () {
+                let cardId = i
                 usersCollection.doc(user.uid).update({
                   his: firebase.firestore.FieldValue.arrayRemove(his[cardId])
                 }).catch((error) => {
